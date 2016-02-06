@@ -1,5 +1,6 @@
 package com.example.klayton.krishighor_test;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,8 +9,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+
+import com.example.klayton.reg.Reg;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +32,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        b = (Button)findViewById(R.id.button);
+
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Reg.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override
