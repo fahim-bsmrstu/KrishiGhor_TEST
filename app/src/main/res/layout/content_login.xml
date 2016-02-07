@@ -38,6 +38,7 @@
         android:layout_height="wrap_content"
         android:text="LOGIN"
         android:id="@+id/login"
+
         />
 
     <TextView
@@ -57,5 +58,6 @@
         android:id="@+id/register"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" />
+        android:layout_marginTop="45dp"
+        />
 </LinearLayout>
